@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Personal Information</h1>
+<form action="/action_page.php" method="post">
+    <fieldset>
+        <legend>Personal Information:</legend>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" minlength="4" required><br><br>
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <legend>Subjects:</legend>
+        <input type="checkbox" id="mil" name="subjects[]" value="MIL">
+        <label for="mil">MIL</label><br>
+        <input type="checkbox" id="cpar" name="subjects[]" value="CPAR">
+        <label for="cpar">CPAR</label><br>
+        <input type="checkbox" id="els" name="subjects[]" value="ELS">
+        <label for="els">ELS</label><br>
+        <input type="checkbox" id="pr2" name="subjects[]" value="PR2">
+        <label for="pr2">PR2</label><br>
+        <input type="checkbox" id="pe" name="subjects[]" value="PE">
+        <label for="pe">PE</label><br>
+        <input type="checkbox" id="java" name="subjects[]" value="JAVA">
+        <label for="java">JAVA</label><br>
+        <input type="checkbox" id="philo" name="subjects[]" value="PHILO">
+        <label for="philo">PHILO</label><br><br>
+
+        <legend>Color:</legend>
+        <label for="color">Select color:</label><br>
+        <select id="color" name="color" required>
+            <option value="" disabled selected>Select color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

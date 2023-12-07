@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Show Date and Time</title>
+</head>
+<body>
+    <button onclick="showDateTime()">Click me to show date and time</button>
+
+    <script>
+        function showDateTime() {
+            const currentDateTime = new Date();
+            const formattedDateTime = currentDateTime.toLocaleString();
+            alert("Current Date and Time: " + formattedDateTime);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Andrei Cosico's Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --primary-color: #009688;
+            --text-color: #555555;
+            --bg-color: #f5f5f5;
+            --font-family: 'Roboto', sans-serif;
+        }
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family);
+        }
+        .w3-bar, .w3-button, .w3-tag, .fa {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .w3-bar-item, .w3-button {
+            border-radius: 3px;
+        }
+        .w3-teal, .w3-hover-teal:hover, .w3-tag.teal {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        .w3-text-teal, .w3-hover-text-teal:hover {
+            color: var(--primary-color)!important;
+        }
+        .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-grey.w3-hover-shadow:hover {
+            background-color: var(--bg-color);
+        }
+        .w3-text-grey, .w3-hover-text-grey:hover {
+            color: var(--text-color)!important;
+        }
+        .w3-card, .w3-card-2, .w3-card-4, .w3-container, .w3-panel {
+            box-shadow: none!important;
+        }
+        .w3-card, .w3-card-2, .w3-card-4 {
+            transition: box-shadow 0.3s;
+            border: 1px solid #e0e0e0;
+        }
+        .w3-card:hover, .w3-card-2:hover, .w3-card-4:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .w3-navbar {
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar (sit on top) -->
+<nav class="w3-navbar w3-white w3-wide w3-padding w3-card">
+    <div class="w3-bar w3-white">
+        <a href="#home" class="w3-bar-item w3-button w3-teal"><b>John Andrei Cosico</b> Portfolio</a>
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32" id="home">
+    <h1><b>Welcome to My Portfolio</b></h1>
+    <p>Welcome to the website of <span class="w3-tag teal">John Andrei Cosico</span></p>
+</header>
+
+<!-- About Section -->
+<section class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2>About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>John Andrei Cosico, the most skilled rapper in San Pablo.</p>
+</section>
+
+<!-- Portfolio Section -->
+<section class="w3-padding-64" id="portfolio">
+    <h2>My Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <!-- Add your images here -->
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="w3-padding-64" id="contact">
+    <h2>Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> San Pablo, Philippines</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 09951425340</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: andreicosico34@mail.com</p>
+    </div>
+    <p>Let's get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+        <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
+        <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+        <input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-teal w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="#" class="fa fa-https://www.facebook.com/topthree.cosii w3-hover-opacity"></a>
+    <a href="#" class="fa fa-https://www.instagram.com/topthree.cosii/?fbclid=IwAR2Hca2bEIJQ-ePpEPbuK9RcVJ12QPDVgmlDKMqUZv9-ppTOSPvMzw8dymc w3-hover-opacity"></a>
+    <a href="#" class="fa fa-https://open.spotify.com/artist/2kJhdSYBck8e8ZiuUWVrBr?fbclid=IwAR0n5L4umbbqDDi3DWh3AvFtrAZgwIaOp73gaL4e65zYlrusXJWIP2NbphY w3-hover-opacity"></a>
+</footer>
+
+</body>
+</html>

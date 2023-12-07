@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+div {
+ 
+ width: 400px;
+  border: 20px solid #3498db;
+  padding: 30px;
+  margin: 15px;
+}
+
+  </style>
+  </head>
+  <body>
+  <h2></h2>
+  <p></p>
+
+
+
+  </body>
+  </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDLSHS Enrollment Form</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+        background-color: #f7f7f7;
+        background-image: url('your-background-pattern.jpg'); /* Replace with your background image */
+        background-repeat: repeat;
+        color: #333;
+        position: relative;
+    }
+
+    .logo-left {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .logo-right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #3498db;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Pacifico', cursive;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: linear-gradient(45deg, #3498db, #2ecc71);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    button {
+        background: linear-gradient(45deg, #2ecc71, #3498db);
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background: linear-gradient(45deg, #3498db, #2ecc71);
+    }
+</style>
+</head>
+
+<body>
+	<img src="C:\Users\Dell_PC\Pictures\crecencia-logo.jpg" alt="Logo" class="logo-left">
+	<img src="C:\Users\Dell_PC\Downloads\deped-logo.png" alt="Logo" class="logo-right">
+    <h1>CDLSHS Enrollment Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="referenceNumber">Learner's Reference Number (LRN):</label>
+        <input type="text" id="referenceNumber" name="referenceNumber" maxlength="12" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="age" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+		
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contactNumber">Contact no. :</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies">
+
+        <label for="picture">Insert Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+		<form action="#" method="post" enctype="multipart/form-data" target="_blank">
+		<button type="submit">Submit</button>
+		</form>
+</body>
+
+</html>

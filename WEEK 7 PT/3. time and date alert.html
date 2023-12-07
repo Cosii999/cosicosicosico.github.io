@@ -1,0 +1,23 @@
+<html>
+<body>
+<style>
+body {background-color: powderblue;}
+h1   {color: gray;}
+p    {color: green;}
+</style>
+
+<h1>ANONG ORAS NA SA PINAS</h1>
+
+<p>Pag pinindot mo yan malalaman mo.</p>
+
+    <button onclick="showDateTime()">Click me nigga</button>
+
+    <script>
+        function showDateTime() {
+            const currentDateTime = new Date();
+            const formattedDateTime = currentDateTime.toLocaleString();
+            alert("Current Date and Time: " + formattedDateTime);
+        }
+    </script>
+</body>
+</html>

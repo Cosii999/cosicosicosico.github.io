@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">MOVE AND STOP PICTURE</h1>
+<p style="color:black;">CROCODILE.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Screenshot 2023-10-12 152930.PNG"
+  } else {
+    pic = "giphy.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="Screenshot 2023-10-12 152930.PNG" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Move</button>
+<button type="button" onclick="light(0)">Stop</button>
+</p>
+
+</body>
+</html>

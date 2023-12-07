@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #gif-container {
+            position: relative;
+        }
+        #gif {
+            width: 300px;
+            height: 300px;
+        }
+        #stop-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gif-container">
+        <img id="gif" src="giphy.jpg" alt="Animated GIF">
+        <button id="stop-button" onclick="toggleGif()">Stop/Go</button>
+    </div>
+
+    <script>
+        var gif = document.getElementById('gif');
+        var isPlaying = true;
+
+        function toggleGif() {
+            if (isPlaying) {
+                gif.style.animation = 'none';
+            } else {
+                gif.style.animation = 'play 2s steps(30) infinite';
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>

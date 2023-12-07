@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+</head>
+<body>
+
+<h1>Personal Information</h1>
+
+<form action="/action_page.php" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" minlength="4" required><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <legend>Subjects:</legend>
+    <input type="checkbox" id="mil" name="subjects[]" value="MIL">
+    <label for="mil">MIL</label><br>
+    <input type="checkbox" id="cpar" name="subjects[]" value="CPAR">
+    <label for="cpar">CPAR</label><br>
+    <input type="checkbox" id="els" name="subjects[]" value="ELS">
+    <label for="els">ELS</label><br>
+    <input type="checkbox" id="pr2" name="subjects[]" value="PR2">
+    <label for="pr2">PR2</label><br>
+    <input type="checkbox" id="pe" name="subjects[]" value="PE">
+    <label for="pe">PE</label><br>
+    <input type="checkbox" id="java" name="subjects[]" value="JAVA">
+    <label for="java">JAVA</label><br>
+    <input type="checkbox" id="philo" name="subjects[]" value="PHILO">
+    <label for="philo">PHILO</label><br><br>
+
+    <label for="color">Select color:</label>
+    <select id="color" name="color" required>
+        <option value="" disabled selected>Select color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

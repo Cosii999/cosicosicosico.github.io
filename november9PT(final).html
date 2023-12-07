@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: #3498db;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #2ecc71;
+}
+
+/* Style the topnav links */
+.topnav a {
+      float: left;
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+border: 2px solid	 #e74c3c;
+  background-color: #f39c12;
+  float: left;
+  width: 75%;
+  padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f39c12;
+  padding-left: 10px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #34495e;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>WEBSITE NI COSI</h1>
+  <p>A.K.A. MR. STEALYOGIRL</p>
+</div>
+
+<div class="topnav">
+  <a href="#">SPOTIFY</a>
+  <a href="#">YOUTUBE</a>
+  <a href="#">SOUNDCLOUD</a>
+  <a href="#" style="float:right">SUBSCRIBE</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 style="color: #3498db; text-decoration: underline;">TITLE HEADING</h2>
+        <h5 style="color: #3498db;">Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p style="color: #555555;">Some text..</p>
+        <p style="color: #555555;">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="card">
+        <h2 style="color: #3498db; text-decoration: underline;">TITLE HEADING</h2>
+        <h5 style="color: #3498db;">Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p style="color: #555555;">Some text..</p>
+        <p style="color: #555555;">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2 style="color: #3498db; text-decoration: underline;">About Me</h2>
+        <div class="fakeimg" style="height:100px;">Image</div>
+        <p style="color: #555555;">MINSAN ESTUDYANTE MADALAS RAPPER.</p>
+      </div>
+      <div class="card">
+        <h3 style="color: #3498db; text-decoration: underline;">Popular Post</h3>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+        <div class="fakeimg">
+          <p>Image</p>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color: #3498db; text-decoration: underline;">Follow Me</h3>
+        <p style="color: #555555;">Some text..</p>
+      </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html
